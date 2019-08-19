@@ -18,11 +18,11 @@ end clase1;
 
 architecture Behavioral of clase1 is
 
-    constant CLK_1HZ    : natural :=100000000;
-    constant CLK_2HZ    : natural :=50000000;
-    constant CLK_10HZ   : natural :=10000000;
-    constant CLK_10KHZ  : natural :=100000;
-    constant CLK_1MHZ   : natural :=100;
+    constant CLK_1HZ    : natural :=100000000/2;
+    constant CLK_2HZ    : natural :=50000000/2;
+    constant CLK_10HZ   : natural :=10000000/2;
+    constant CLK_10KHZ  : natural :=100000/2;
+    constant CLK_1MHZ   : natural :=100/2;
     
 ------Constantes utilizadas en simulacion    
 --    constant CLK_1HZ    : natural :=1000;
@@ -31,7 +31,7 @@ architecture Behavioral of clase1 is
 --    constant CLK_10KHZ  : natural :=10;
 --    constant CLK_1MHZ   : natural :=1;
     
-    signal cnt  : integer range 0 to CLK_1HZ/2;
+    signal cnt  : integer range 0 to CLK_1HZ;
     signal limite : natural:= CLK_1HZ;
     signal sub_clk : std_logic:='0';
 begin
@@ -56,7 +56,7 @@ begin
 	begin
 	   if rising_edge(clk) then
 	
-           if cnt < limite/2 then
+           if cnt < limite then
                cnt <= cnt + 1;
            else 
                cnt<=0;
