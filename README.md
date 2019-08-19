@@ -1,6 +1,7 @@
 # E6
 
 Clase1:
+
   se creó un modulo sensillo que demuestra lógica combinacional y secuencial, 
   se lee el valor de los switches de la zybo, dependiendo el valor de los 
   switches, cambiará valor que despliegan los led(2-0) y varia la velocidad 
@@ -11,5 +12,6 @@ Clase1:
   correcto funcionamiento.
   
  Clase2:
+ 
   Se utiliza el código del modulo de la clase1 y se utiliza para crear un 
   IP Core con interfaz AXI-Lite
