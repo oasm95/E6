@@ -15,3 +15,8 @@ Clase1:
 
     Se utiliza el código del modulo de la clase1 y se utiliza para crear un 
     IP Core con interfaz AXI-Lite
+
+ Clase 3:
+ 
+    Se creó un IPCore el cual funciona como un simple GPIO de entrada capaz 
+    de generar y controlar una interrupcion generada por flanco de subida.
