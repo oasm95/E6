@@ -20,3 +20,8 @@ Clase1:
  
     Se creó un IPCore el cual funciona como un simple GPIO de entrada capaz 
     de generar y controlar una interrupcion generada por flanco de subida.
+
+Carpeta Perifericos:
+
+    En ella se encuentran ejemplos de IPCores para los perifericos, TIMER, GPIO, PWM
+    El periferico de timer implementa generacion y control de interrupciones
